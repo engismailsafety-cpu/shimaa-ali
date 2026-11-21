@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
     <title>السلسلة التعليمية للتجويد | المعلمة شيماء علي</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -612,6 +615,19 @@
             background: var(--primary-green-dark);
         }
 
+        .secondary-reset-btn {
+            background: #eef2f0;
+            color: var(--dark-navy);
+            border: 1px solid #cdd6d1;
+            width: 100%;
+            padding: 10px;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 0.92rem;
+            cursor: pointer;
+            margin-top: 8px;
+        }
+
         /* Floating WhatsApp */
         .floating-wa {
             position: fixed;
@@ -879,6 +895,7 @@
                 <input type="text" id="adminPromo" value="✨ خصم خاص بمناسبة إطلاق الطبعة الجديدة عند طلب السلسلة كاملة!">
             </div>
             <button type="button" class="primary-save-btn" onclick="saveAdminChanges()">حفظ وتحديث البيانات</button>
+            <button type="button" class="secondary-reset-btn" onclick="resetToGitHubDefaults()">استعادة القيم الافتراضية من الكود الأساسي</button>
         </div>
     </div>
 
@@ -894,7 +911,10 @@
 
     <!-- JavaScript Logic -->
     <script>
-        const STORAGE_KEY = 'tajweed_series_settings_v2';
+        // غيّر قيمة CODE_VERSION عند كل تعديل مهم ترفعه على GitHub
+        // ليتم اعتماد القيم الأساسية الجديدة تلقائياً لدى أي جهاز يفتح الرابط
+        const CODE_VERSION = '2026.11.21.1';
+        const STORAGE_KEY = `tajweed_series_settings_${CODE_VERSION}`;
         const DEFAULT_FB_URL = 'https://www.facebook.com/share/1dn5Ja2TqC/';
 
         const defaultSettings = {
@@ -908,7 +928,20 @@
 
         let settings = { ...defaultSettings };
 
+        function purgeOldVersionKeys() {
+            try {
+                Object.keys(localStorage).forEach((key) => {
+                    if (key.startsWith('tajweed_series_settings_') && key !== STORAGE_KEY) {
+                        localStorage.removeItem(key);
+                    }
+                });
+            } catch (e) {
+                console.warn('تعذر تنظيف النسخ السابقة:', e);
+            }
+        }
+
         function loadSettings() {
+            purgeOldVersionKeys();
             try {
                 const saved = localStorage.getItem(STORAGE_KEY);
                 if (saved) {
@@ -918,6 +951,15 @@
                 console.warn('تعذر قراءة الإعدادات المحفوظة:', e);
             }
             applySettingsToUI();
+        }
+
+        function resetToGitHubDefaults() {
+            settings = { ...defaultSettings };
+            try {
+                localStorage.removeItem(STORAGE_KEY);
+            } catch (e) {}
+            applySettingsToUI();
+            alert('تمت استعادة إعدادات الكود الأساسي بنجاح.');
         }
 
         function applySettingsToUI() {
