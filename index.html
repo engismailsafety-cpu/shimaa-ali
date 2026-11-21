@@ -6,7 +6,7 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
-    <title>السلسلة التعليمية للتجويد | المعلمة شيماء علي</title>
+    <title>سلسلة التجويد والعلوم الشرعية | المعلمة شيماء علي</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,6 +23,7 @@
             --dark-navy: #0a192f;
             --light-bg: #f8faf9;
             --white: #ffffff;
+            --danger: #c62828;
             --border-soft: rgba(13, 92, 58, 0.12);
             --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
             --shadow-hover: 0 18px 40px rgba(10, 25, 47, 0.14);
@@ -57,10 +58,11 @@
             top: 0;
             z-index: 1000;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.16);
+            gap: 10px;
         }
 
         .logo {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             font-weight: 800;
             color: var(--accent-gold);
             display: flex;
@@ -72,16 +74,17 @@
         .header-actions {
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 10px;
+            flex-shrink: 0;
         }
 
         .quick-order-btn {
             background: var(--accent-gold);
             color: var(--dark-navy);
             border: none;
-            padding: 8px 16px;
+            padding: 8px 15px;
             border-radius: 30px;
-            font-size: 0.9rem;
+            font-size: 0.88rem;
             font-weight: 800;
             cursor: pointer;
             display: inline-flex;
@@ -99,9 +102,9 @@
             background: rgba(212, 175, 55, 0.15);
             border: 1px solid var(--accent-gold);
             color: var(--accent-gold);
-            padding: 8px 16px;
+            padding: 8px 15px;
             border-radius: 30px;
-            font-size: 0.9rem;
+            font-size: 0.88rem;
             font-weight: 700;
             cursor: pointer;
             user-select: none;
@@ -109,7 +112,7 @@
             box-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
             display: inline-flex;
             align-items: center;
-            gap: 8px;
+            gap: 7px;
         }
 
         .teacher-badge:hover {
@@ -134,11 +137,11 @@
                 linear-gradient(135deg, rgba(10, 25, 47, 0.94), rgba(13, 92, 58, 0.92));
             color: var(--white);
             text-align: center;
-            padding: 75px 20px;
+            padding: 72px 20px;
         }
 
         .hero h1 {
-            font-size: 2.5rem;
+            font-size: 2.45rem;
             color: var(--accent-gold);
             margin-bottom: 14px;
             font-family: 'Tajawal', sans-serif;
@@ -147,8 +150,8 @@
 
         .hero p {
             font-size: 1.15rem;
-            max-width: 750px;
-            margin: 0 auto 30px;
+            max-width: 760px;
+            margin: 0 auto 28px;
             opacity: 0.96;
         }
 
@@ -162,16 +165,16 @@
         .hero-btn {
             background: var(--accent-gold);
             color: var(--dark-navy);
-            padding: 13px 30px;
+            padding: 12px 28px;
             border-radius: 50px;
             text-decoration: none;
             border: none;
             cursor: pointer;
             font-weight: 800;
-            font-size: 1.05rem;
+            font-size: 1rem;
             display: inline-flex;
             align-items: center;
-            gap: 10px;
+            gap: 9px;
             box-shadow: 0 5px 20px rgba(212, 175, 55, 0.35);
             transition: transform 0.25s ease, background 0.25s ease;
         }
@@ -185,14 +188,14 @@
             background: rgba(255, 255, 255, 0.08);
             color: var(--white);
             border: 1.5px solid rgba(255, 255, 255, 0.45);
-            padding: 13px 28px;
+            padding: 12px 26px;
             border-radius: 50px;
             text-decoration: none;
             font-weight: 700;
-            font-size: 1.02rem;
+            font-size: 1rem;
             display: inline-flex;
             align-items: center;
-            gap: 10px;
+            gap: 9px;
             transition: all 0.25s ease;
         }
 
@@ -204,7 +207,7 @@
 
         /* Main Container */
         .container {
-            max-width: 1120px;
+            max-width: 1140px;
             margin: 50px auto;
             padding: 0 20px;
         }
@@ -232,8 +235,8 @@
         /* Books Grid */
         .books-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 32px;
+            grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+            gap: 30px;
         }
 
         .book-card {
@@ -255,7 +258,7 @@
         .book-header {
             background: linear-gradient(135deg, var(--primary-green), var(--dark-navy));
             color: var(--white);
-            padding: 34px 20px;
+            padding: 32px 20px;
             text-align: center;
             position: relative;
         }
@@ -266,49 +269,54 @@
             right: 15px;
             background: var(--accent-gold);
             color: var(--dark-navy);
-            font-size: 0.8rem;
+            font-size: 0.78rem;
             font-weight: 800;
             padding: 4px 12px;
             border-radius: 12px;
         }
 
         .book-icon {
-            font-size: 3.3rem;
+            font-size: 3.1rem;
             color: var(--accent-gold);
             margin-bottom: 10px;
         }
 
         .book-body {
-            padding: 28px;
+            padding: 26px;
             flex-grow: 1;
             display: flex;
             flex-direction: column;
         }
 
         .book-body h3 {
-            font-size: 1.55rem;
+            font-size: 1.5rem;
             color: var(--dark-navy);
             margin-bottom: 8px;
         }
 
         .price-tag {
             color: var(--primary-green);
-            font-size: 1.3rem;
+            font-size: 1.28rem;
             font-weight: 800;
-            margin-bottom: 14px;
+            margin-bottom: 12px;
+        }
+
+        .book-desc {
+            font-size: 0.95rem;
+            color: #46515a;
         }
 
         .features-list {
             list-style: none;
-            margin: 14px 0 24px;
+            margin: 14px 0 22px;
         }
 
         .features-list li {
-            margin-bottom: 10px;
+            margin-bottom: 9px;
             display: flex;
             align-items: center;
             gap: 10px;
-            font-size: 0.95rem;
+            font-size: 0.93rem;
         }
 
         .features-list i {
@@ -320,7 +328,7 @@
             margin-top: auto;
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 9px;
         }
 
         .btn-order-now {
@@ -328,10 +336,10 @@
             color: var(--white);
             border: none;
             text-align: center;
-            padding: 12px 16px;
+            padding: 11px 16px;
             border-radius: 12px;
             font-weight: 800;
-            font-size: 0.98rem;
+            font-size: 0.96rem;
             cursor: pointer;
             display: flex;
             align-items: center;
@@ -350,11 +358,11 @@
             color: white;
             border: none;
             text-align: center;
-            padding: 11px 16px;
+            padding: 10px 16px;
             border-radius: 12px;
             text-decoration: none;
             font-weight: 700;
-            font-size: 0.95rem;
+            font-size: 0.93rem;
             cursor: pointer;
             display: flex;
             align-items: center;
@@ -372,11 +380,11 @@
             color: white;
             border: none;
             text-align: center;
-            padding: 11px 16px;
+            padding: 10px 16px;
             border-radius: 12px;
             text-decoration: none;
             font-weight: 700;
-            font-size: 0.95rem;
+            font-size: 0.93rem;
             cursor: pointer;
             display: flex;
             align-items: center;
@@ -407,13 +415,13 @@
 
         .bundle-info h3 {
             color: var(--accent-gold);
-            font-size: 1.45rem;
+            font-size: 1.42rem;
             margin-bottom: 6px;
             font-family: 'Tajawal', sans-serif;
         }
 
         .bundle-info p {
-            font-size: 0.96rem;
+            font-size: 0.95rem;
             opacity: 0.95;
         }
 
@@ -422,7 +430,7 @@
         }
 
         .bundle-total {
-            font-size: 1.4rem;
+            font-size: 1.38rem;
             font-weight: 800;
             color: var(--accent-gold);
             display: block;
@@ -463,7 +471,7 @@
             display: none;
             position: fixed;
             inset: 0;
-            background: rgba(10, 25, 47, 0.72);
+            background: rgba(10, 25, 47, 0.74);
             backdrop-filter: blur(3px);
             z-index: 2000;
             justify-content: center;
@@ -478,11 +486,11 @@
         .modal-box {
             background: var(--white);
             width: 100%;
-            max-width: 520px;
+            max-width: 620px;
             max-height: 92vh;
             overflow-y: auto;
             border-radius: 20px;
-            padding: 28px;
+            padding: 26px;
             box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
             animation: modalFade 0.2s ease;
         }
@@ -497,13 +505,13 @@
             justify-content: space-between;
             align-items: center;
             border-bottom: 2px solid #eef2f0;
-            padding-bottom: 14px;
-            margin-bottom: 20px;
+            padding-bottom: 13px;
+            margin-bottom: 18px;
         }
 
         .modal-header h2 {
             color: var(--primary-green);
-            font-size: 1.3rem;
+            font-size: 1.25rem;
             display: flex;
             align-items: center;
             gap: 8px;
@@ -523,14 +531,14 @@
         }
 
         .form-group {
-            margin-bottom: 15px;
+            margin-bottom: 14px;
         }
 
         .form-group label {
             display: block;
             font-weight: 700;
-            margin-bottom: 6px;
-            font-size: 0.92rem;
+            margin-bottom: 5px;
+            font-size: 0.9rem;
             color: var(--dark-navy);
         }
 
@@ -541,7 +549,7 @@
             padding: 10px 12px;
             border: 1px solid #cbd5d0;
             border-radius: 10px;
-            font-size: 0.95rem;
+            font-size: 0.94rem;
             background: #fcfdfb;
         }
 
@@ -553,18 +561,100 @@
             box-shadow: 0 0 0 3px rgba(13, 92, 58, 0.12);
         }
 
+        .form-grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+
+        .admin-section-box {
+            background: var(--light-bg);
+            border: 1px solid #dde6e1;
+            border-radius: 14px;
+            padding: 16px;
+            margin-bottom: 16px;
+        }
+
+        .admin-section-title {
+            font-size: 1.02rem;
+            font-weight: 800;
+            color: var(--dark-navy);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 7px;
+        }
+
+        .managed-books-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 12px;
+        }
+
+        .managed-book-item {
+            background: var(--white);
+            border: 1px solid #dce5e0;
+            border-radius: 12px;
+            padding: 12px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .managed-book-meta strong {
+            display: block;
+            color: var(--dark-navy);
+            font-size: 0.98rem;
+        }
+
+        .managed-book-meta span {
+            font-size: 0.85rem;
+            color: var(--primary-green);
+            font-weight: 700;
+        }
+
+        .managed-book-actions {
+            display: flex;
+            gap: 8px;
+        }
+
+        .btn-edit-sm {
+            background: var(--dark-navy);
+            color: var(--white);
+            border: none;
+            padding: 6px 12px;
+            border-radius: 8px;
+            font-size: 0.84rem;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .btn-delete-sm {
+            background: var(--danger);
+            color: var(--white);
+            border: none;
+            padding: 6px 12px;
+            border-radius: 8px;
+            font-size: 0.84rem;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
         .order-summary-box {
             background: var(--light-bg);
             border: 1px dashed var(--primary-green);
             border-radius: 12px;
             padding: 14px 16px;
-            margin-bottom: 18px;
+            margin-bottom: 16px;
         }
 
         .summary-row {
             display: flex;
             justify-content: space-between;
-            font-size: 0.95rem;
+            font-size: 0.94rem;
             margin-bottom: 6px;
         }
 
@@ -586,14 +676,19 @@
             margin-top: 10px;
         }
 
-        @media (max-width: 520px) {
+        @media (max-width: 560px) {
+            .form-grid-2,
             .order-submit-row {
                 grid-template-columns: 1fr;
             }
             .hero h1 {
                 font-size: 2rem;
             }
-            .quick-order-btn span {
+            .logo span {
+                font-size: 1rem;
+            }
+            .quick-order-btn span,
+            .teacher-badge span {
                 display: none;
             }
         }
@@ -603,12 +698,12 @@
             color: white;
             border: none;
             width: 100%;
-            padding: 12px;
+            padding: 11px;
             border-radius: 10px;
             font-weight: 700;
-            font-size: 1rem;
+            font-size: 0.98rem;
             cursor: pointer;
-            margin-top: 8px;
+            margin-top: 6px;
         }
 
         .primary-save-btn:hover {
@@ -623,7 +718,7 @@
             padding: 10px;
             border-radius: 10px;
             font-weight: 700;
-            font-size: 0.92rem;
+            font-size: 0.9rem;
             cursor: pointer;
             margin-top: 8px;
         }
@@ -669,16 +764,16 @@
     <header>
         <div class="logo">
             <i class="fa-solid fa-book-quran"></i>
-            <span>سلسلة التجويد</span>
+            <span>سلسلة التجويد والعلوم الشرعية</span>
         </div>
         <div class="header-actions">
-            <button type="button" class="quick-order-btn" onclick="openOrderModal('السلسلة كاملة')">
+            <button type="button" class="quick-order-btn" onclick="openOrderModal('bundle')">
                 <i class="fa-solid fa-bag-shopping"></i>
                 <span>اطلب الآن</span>
             </button>
             <div class="teacher-badge" id="teacherBadge" title="اضغط مطولاً للوحة الأدمن">
-                <i class="fa-solid fa-user-check"></i>
-                <span>المعلمة شيماء علي</span>
+                <i class="fa-solid fa-user-shield"></i>
+                <span>إدارة المنصة</span>
             </div>
         </div>
     </header>
@@ -690,10 +785,10 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <h1>سلسلة تيسير أحكام التجويد</h1>
-        <p>رحلة إيمانية ميسرة لإتقان تلاوة القرآن الكريم للكبار والأطفال بإشراف المعلمة شيماء علي</p>
+        <h1>سلسلة التجويد والعلوم الشرعية</h1>
+        <p>رحلة إيمانية وعلمية ميسرة لإتقان تلاوة القرآن الكريم وتعلم العلوم الشرعية للكبار والأطفال بإشراف المعلمة شيماء علي</p>
         <div class="hero-actions">
-            <button type="button" class="hero-btn" onclick="openOrderModal('السلسلة كاملة')">
+            <button type="button" class="hero-btn" onclick="openOrderModal('bundle')">
                 <i class="fa-solid fa-cart-plus"></i> ابدأ طلبك الآن
             </button>
             <a href="#books" class="hero-btn-outline">
@@ -704,79 +799,19 @@
 
     <!-- Books Section -->
     <section class="container" id="books">
-        <h2 class="section-title">إصدارات السلسلة التعليمية</h2>
+        <h2 class="section-title">إصدارات سلسلة التجويد والعلوم الشرعية</h2>
 
-        <div class="books-grid">
-            <!-- Book 1: السراج المنير -->
-            <div class="book-card">
-                <div class="book-header">
-                    <span class="book-tag">الكبار والناشئة</span>
-                    <div class="book-icon"><i class="fa-solid fa-book-quran"></i></div>
-                    <h2>السراج المنير</h2>
-                </div>
-                <div class="book-body">
-                    <h3>كتاب "السراج المنير"</h3>
-                    <div class="price-tag" id="priceBook1">السعر: 180 جنيه</div>
-                    <p>دليلك الشامل والمبسط لفهم وتطبيق أحكام التجويد بسهولة ويسر مع التطبيق العملي المباشر من آيات المصحف الشريف.</p>
-                    <ul class="features-list">
-                        <li><i class="fa-solid fa-circle-check"></i> شرح ميسر لمخارج الحروف والصفات.</li>
-                        <li><i class="fa-solid fa-circle-check"></i> جداول توضيحية وأمثلة قرآنية تطبيقية.</li>
-                        <li><i class="fa-solid fa-circle-check"></i> يناسب الدورات والتعليم الذاتي.</li>
-                    </ul>
-                    <div class="cta-buttons">
-                        <button type="button" onclick="openOrderModal('السراج المنير')" class="btn-order-now">
-                            <i class="fa-solid fa-bag-shopping"></i> إتمام طلب الكتاب
-                        </button>
-                        <button type="button" onclick="openWhatsApp('السراج المنير')" class="btn-whatsapp">
-                            <i class="fa-brands fa-whatsapp"></i> استفسار سريع عبر واتساب
-                        </button>
-                        <button type="button" onclick="openMessenger('السراج المنير')" class="btn-messenger">
-                            <i class="fa-brands fa-facebook-messenger"></i> مراسلة عبر ماسنجر
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Book 2: بطل التجويد -->
-            <div class="book-card">
-                <div class="book-header">
-                    <span class="book-tag">مخصص للأطفال</span>
-                    <div class="book-icon"><i class="fa-solid fa-child-reaching"></i></div>
-                    <h2>بطل التجويد</h2>
-                </div>
-                <div class="book-body">
-                    <h3>كتاب "بطل التجويد"</h3>
-                    <div class="price-tag" id="priceBook2">السعر: 140 جنيه</div>
-                    <p>منهج تفاعلي ممتع بالرسومات والأنشطة يحبب الأطفال في تجويد القرآن الكريم وتحسين التلاوة بشكل مشوق.</p>
-                    <ul class="features-list">
-                        <li><i class="fa-solid fa-circle-check"></i> تمارين ملونة وأنشطة تفاعلية مشوقة.</li>
-                        <li><i class="fa-solid fa-circle-check"></i> تدرج سلس يناسب استيعاب الأطفال.</li>
-                        <li><i class="fa-solid fa-circle-check"></i> يبني شغف الطفل وحبه للتلاوة الصحيحة.</li>
-                    </ul>
-                    <div class="cta-buttons">
-                        <button type="button" onclick="openOrderModal('بطل التجويد')" class="btn-order-now">
-                            <i class="fa-solid fa-bag-shopping"></i> إتمام طلب الكتاب
-                        </button>
-                        <button type="button" onclick="openWhatsApp('بطل التجويد')" class="btn-whatsapp">
-                            <i class="fa-brands fa-whatsapp"></i> استفسار سريع عبر واتساب
-                        </button>
-                        <button type="button" onclick="openMessenger('بطل التجويد')" class="btn-messenger">
-                            <i class="fa-brands fa-facebook-messenger"></i> مراسلة عبر ماسنجر
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div class="books-grid" id="booksGrid"></div>
 
         <!-- Bundle Offer Banner -->
-        <div class="bundle-banner">
+        <div class="bundle-banner" id="bundleBanner">
             <div class="bundle-info">
-                <h3><i class="fa-solid fa-gift"></i> باقة السلسلة كاملة (السراج المنير + بطل التجويد)</h3>
-                <p>احصل على النسختين معاً بخصم مميز قدره <strong id="bundleDiscountLabel">20</strong> جنيه على النسخة الإضافية.</p>
+                <h3><i class="fa-solid fa-gift"></i> باقة السلسلة كاملة (جميع الإصدارات المتاحة)</h3>
+                <p>احصل على الإصدارات معاً بخصم مميز قدره <strong id="bundleDiscountLabel">20</strong> جنيه على كل مجموعة.</p>
             </div>
             <div class="bundle-price-box">
                 <span class="bundle-total" id="bundlePricePreview">الإجمالي: 300 جنيه</span>
-                <button type="button" class="hero-btn" onclick="openOrderModal('السلسلة كاملة')">
+                <button type="button" class="hero-btn" onclick="openOrderModal('bundle')">
                     <i class="fa-solid fa-bag-shopping"></i> اطلب السلسلة كاملة
                 </button>
             </div>
@@ -810,31 +845,32 @@
 
             <div class="form-group">
                 <label for="orderSelection">اختر الإصدار المطلوب:</label>
-                <select id="orderSelection" onchange="updateOrderSummary()">
-                    <option value="السراج المنير">كتاب السراج المنير (الكبار والناشئة)</option>
-                    <option value="بطل التجويد">كتاب بطل التجويد (للأطفال)</option>
-                    <option value="السلسلة كاملة">السلسلة كاملة (السراج المنير + بطل التجويد)</option>
-                </select>
+                <select id="orderSelection" onchange="updateOrderSummary()"></select>
             </div>
 
             <div class="form-group">
                 <label for="orderQty">عدد النسخ / المجموعات:</label>
-                <input type="number" id="orderQty" min="1" max="50" value="1" oninput="updateOrderSummary()">
+                <input type="number" id="orderQty" min="1" max="100" value="1" oninput="updateOrderSummary()">
             </div>
 
             <div class="form-group">
                 <label for="customerName">الاسم الكامل:</label>
-                <input type="text" id="customerName" placeholder="مثال: أحمد محمود">
+                <input type="text" id="customerName" placeholder="مثال: أحمد محمود" oninput="syncLiveMessagePreview()">
             </div>
 
             <div class="form-group">
                 <label for="customerPhone">رقم الهاتف للتواصل:</label>
-                <input type="tel" id="customerPhone" placeholder="مثال: 010xxxxxxxx">
+                <input type="tel" id="customerPhone" placeholder="مثال: 010xxxxxxxx" oninput="syncLiveMessagePreview()">
             </div>
 
             <div class="form-group">
                 <label for="customerAddress">المحافظة / العنوان أو ملاحظات التوصيل:</label>
-                <textarea id="customerAddress" rows="2" placeholder="اكتب المحافظة أو طريقة الاستلام المناسبة..."></textarea>
+                <textarea id="customerAddress" rows="2" placeholder="اكتب المحافظة أو طريقة الاستلام المناسبة..." oninput="syncLiveMessagePreview()"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="preparedMessagePreview">نص الرسالة الجاهزة للإرسال:</label>
+                <textarea id="preparedMessagePreview" rows="5" oninput="manualMessageEdited = true"></textarea>
             </div>
 
             <div class="order-summary-box">
@@ -854,10 +890,10 @@
 
             <div class="order-submit-row">
                 <button type="button" class="btn-whatsapp" onclick="submitOrder('whatsapp')">
-                    <i class="fa-brands fa-whatsapp"></i> إرسال الطلب واتساب
+                    <i class="fa-brands fa-whatsapp"></i> إرسال مباشر عبر واتساب
                 </button>
                 <button type="button" class="btn-messenger" onclick="submitOrder('messenger')">
-                    <i class="fa-brands fa-facebook-messenger"></i> إرسال عبر ماسنجر
+                    <i class="fa-brands fa-facebook-messenger"></i> تجهيز وإرسال عبر مسنجر
                 </button>
             </div>
         </div>
@@ -867,34 +903,81 @@
     <div class="modal-overlay" id="adminModal">
         <div class="modal-box">
             <div class="modal-header">
-                <h2><i class="fa-solid fa-user-shield"></i> لوحة الإدارة (المعلمة شيماء علي)</h2>
+                <h2><i class="fa-solid fa-user-shield"></i> لوحة إدارة المنصة</h2>
                 <button type="button" class="close-modal" id="closeModal" aria-label="إغلاق">&times;</button>
             </div>
-            <div class="admin-item form-group">
-                <label>رقم الواتساب الرئيسي:</label>
-                <input type="text" id="adminPhone" value="01004282724">
+
+            <!-- Contact & Offer Settings -->
+            <div class="admin-section-box">
+                <div class="admin-section-title"><i class="fa-solid fa-sliders"></i> إعدادات التواصل والعروض</div>
+                <div class="form-grid-2">
+                    <div class="form-group">
+                        <label for="adminPhone">رقم الواتساب:</label>
+                        <input type="text" id="adminPhone" value="01004282724">
+                    </div>
+                    <div class="form-group">
+                        <label for="adminBundleDiscount">خصم السلسلة كاملة (جنيه):</label>
+                        <input type="number" id="adminBundleDiscount" value="20" min="0">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="adminMessengerTarget">معرف أو رابط مسنجر / صفحة فيسبوك:</label>
+                    <input type="text" id="adminMessengerTarget" value="https://www.facebook.com/share/1dn5Ja2TqC/" placeholder="مثال: اسم_الصفحة أو https://m.me/... أو رابط الصفحة">
+                </div>
+                <div class="form-group">
+                    <label for="adminPromo">نص العرض الترويجي:</label>
+                    <input type="text" id="adminPromo" value="✨ خصم خاص بمناسبة إطلاق الطبعة الجديدة عند طلب السلسلة كاملة!">
+                </div>
+                <button type="button" class="primary-save-btn" onclick="saveGeneralSettings()">حفظ إعدادات التواصل والعروض</button>
             </div>
-            <div class="admin-item form-group">
-                <label>رابط صفحة فيسبوك / ماسنجر:</label>
-                <input type="url" id="adminFbUrl" value="https://www.facebook.com/share/1dn5Ja2TqC/">
+
+            <!-- Add / Edit Book -->
+            <div class="admin-section-box">
+                <div class="admin-section-title">
+                    <i class="fa-solid fa-book-medical"></i>
+                    <span id="bookFormTitle">إضافة كتاب جديد إلى السلسلة</span>
+                </div>
+                <input type="hidden" id="editBookId">
+                <div class="form-grid-2">
+                    <div class="form-group">
+                        <label for="bookTitleInput">اسم الكتاب:</label>
+                        <input type="text" id="bookTitleInput" placeholder="مثال: تحفة الأطفال أو أصول الفقه">
+                    </div>
+                    <div class="form-group">
+                        <label for="bookPriceInput">السعر (جنيه):</label>
+                        <input type="number" id="bookPriceInput" min="1" placeholder="150">
+                    </div>
+                </div>
+                <div class="form-grid-2">
+                    <div class="form-group">
+                        <label for="bookTagInput">الفئة / الشارة:</label>
+                        <input type="text" id="bookTagInput" placeholder="مثال: علوم شرعية أو الكبار">
+                    </div>
+                    <div class="form-group">
+                        <label for="bookIconInput">أيقونة الكتاب:</label>
+                        <select id="bookIconInput">
+                            <option value="fa-book-quran">مصحف وتجويد</option>
+                            <option value="fa-child-reaching">للأطفال والناشئة</option>
+                            <option value="fa-book-open-reader">علوم شرعية</option>
+                            <option value="fa-mosque">فقه وعقيدة</option>
+                            <option value="fa-scroll">متون وحفظ</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="bookDescInput">وصف مختصر للكتاب:</label>
+                    <textarea id="bookDescInput" rows="2" placeholder="وصف موجز لمحتوى الكتاب وأسلوبه..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="bookFeaturesInput">مميزات الكتاب (كل ميزة في سطر):</label>
+                    <textarea id="bookFeaturesInput" rows="3" placeholder="شرح ميسر ومبسط&#10;أمثلة تطبيقية واضحة&#10;مناسب للدراسة الذاتية والحلقات"></textarea>
+                </div>
+                <button type="button" class="primary-save-btn" onclick="saveBookFromAdmin()">حفظ الكتاب في المنصة</button>
+                <button type="button" class="secondary-reset-btn" onclick="resetBookForm()">تفريغ الحقول لإضافة كتاب آخر</button>
+
+                <div class="managed-books-list" id="managedBooksList"></div>
             </div>
-            <div class="admin-item form-group">
-                <label>سعر كتاب السراج المنير (جنيه):</label>
-                <input type="number" id="adminPrice1" value="180" min="1">
-            </div>
-            <div class="admin-item form-group">
-                <label>سعر كتاب بطل التجويد (جنيه):</label>
-                <input type="number" id="adminPrice2" value="140" min="1">
-            </div>
-            <div class="admin-item form-group">
-                <label>قيمة خصم السلسلة كاملة لكل مجموعة (جنيه):</label>
-                <input type="number" id="adminBundleDiscount" value="20" min="0">
-            </div>
-            <div class="admin-item form-group">
-                <label>نص العرض الترويجي:</label>
-                <input type="text" id="adminPromo" value="✨ خصم خاص بمناسبة إطلاق الطبعة الجديدة عند طلب السلسلة كاملة!">
-            </div>
-            <button type="button" class="primary-save-btn" onclick="saveAdminChanges()">حفظ وتحديث البيانات</button>
+
             <button type="button" class="secondary-reset-btn" onclick="resetToGitHubDefaults()">استعادة القيم الافتراضية من الكود الأساسي</button>
         </div>
     </div>
@@ -906,32 +989,62 @@
 
     <!-- Footer -->
     <footer>
-        <p>جميع الحقوق محفوظة © المعلمة شيماء علي - لتعليم القرآن الكريم وأحكام التجويد</p>
+        <p>جميع الحقوق محفوظة © سلسلة التجويد والعلوم الشرعية - المعلمة شيماء علي</p>
     </footer>
 
     <!-- JavaScript Logic -->
     <script>
         // غيّر قيمة CODE_VERSION عند كل تعديل مهم ترفعه على GitHub
-        // ليتم اعتماد القيم الأساسية الجديدة تلقائياً لدى أي جهاز يفتح الرابط
-        const CODE_VERSION = '2026.11.21.2';
-        const STORAGE_KEY = `tajweed_series_settings_${CODE_VERSION}`;
+        // ليتم اعتماد التعديلات الجديدة تلقائياً لدى أي جهاز يفتح الرابط
+        const CODE_VERSION = '2026.11.21.3';
+        const STORAGE_KEY = `sharia_tajweed_platform_${CODE_VERSION}`;
         const DEFAULT_FB_URL = 'https://www.facebook.com/share/1dn5Ja2TqC/';
 
-        const defaultSettings = {
+        const defaultPlatformData = {
             phone: '01004282724',
-            fbUrl: DEFAULT_FB_URL,
-            price1: 180,
-            price2: 140,
+            messengerTarget: DEFAULT_FB_URL,
             bundleDiscount: 20,
-            promo: '✨ خصم خاص بمناسبة إطلاق الطبعة الجديدة عند طلب السلسلة كاملة!'
+            promo: '✨ خصم خاص بمناسبة إطلاق الطبعة الجديدة عند طلب السلسلة كاملة!',
+            books: [
+                {
+                    id: 'siraj-al-munir',
+                    title: 'السراج المنير',
+                    price: 180,
+                    tag: 'الكبار والناشئة',
+                    icon: 'fa-book-quran',
+                    description: 'دليلك الشامل والمبسط لفهم وتطبيق أحكام التجويد بسهولة ويسر مع التطبيق العملي المباشر من آيات المصحف الشريف.',
+                    features: [
+                        'شرح ميسر لمخارج الحروف والصفات.',
+                        'جداول توضيحية وأمثلة قرآنية تطبيقية.',
+                        'يناسب الدورات والتعليم الذاتي.'
+                    ]
+                },
+                {
+                    id: 'batal-al-tajweed',
+                    title: 'بطل التجويد',
+                    price: 140,
+                    tag: 'مخصص للأطفال',
+                    icon: 'fa-child-reaching',
+                    description: 'منهج تفاعلي ممتع بالرسومات والأنشطة يحبب الأطفال في تجويد القرآن الكريم وتحسين التلاوة بشكل مشوق.',
+                    features: [
+                        'تمارين ملونة وأنشطة تفاعلية مشوقة.',
+                        'تدرج سلس يناسب استيعاب الأطفال.',
+                        'يبني شغف الطفل وحبه للتلاوة الصحيحة.'
+                    ]
+                }
+            ]
         };
 
-        let settings = { ...defaultSettings };
+        let platformData = JSON.parse(JSON.stringify(defaultPlatformData));
+        let manualMessageEdited = false;
 
         function purgeOldVersionKeys() {
             try {
                 Object.keys(localStorage).forEach((key) => {
-                    if (key.startsWith('tajweed_series_settings_') && key !== STORAGE_KEY) {
+                    if (
+                        (key.startsWith('sharia_tajweed_platform_') || key.startsWith('tajweed_series_settings_')) &&
+                        key !== STORAGE_KEY
+                    ) {
                         localStorage.removeItem(key);
                     }
                 });
@@ -940,56 +1053,166 @@
             }
         }
 
-        function loadSettings() {
+        function persistPlatformData() {
+            try {
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(platformData));
+            } catch (e) {
+                console.warn('تعذر حفظ البيانات:', e);
+            }
+        }
+
+        function loadPlatformData() {
             purgeOldVersionKeys();
             try {
                 const saved = localStorage.getItem(STORAGE_KEY);
                 if (saved) {
-                    settings = { ...defaultSettings, ...JSON.parse(saved) };
+                    const parsed = JSON.parse(saved);
+                    platformData = {
+                        ...defaultPlatformData,
+                        ...parsed,
+                        books: Array.isArray(parsed.books) && parsed.books.length > 0
+                            ? parsed.books
+                            : JSON.parse(JSON.stringify(defaultPlatformData.books))
+                    };
                 }
             } catch (e) {
-                console.warn('تعذر قراءة الإعدادات المحفوظة:', e);
+                console.warn('تعذر قراءة بيانات المنصة:', e);
             }
-            applySettingsToUI();
+            renderPlatform();
         }
 
         function resetToGitHubDefaults() {
-            settings = { ...defaultSettings };
+            platformData = JSON.parse(JSON.stringify(defaultPlatformData));
             try {
                 localStorage.removeItem(STORAGE_KEY);
             } catch (e) {}
-            applySettingsToUI();
-            alert('تمت استعادة إعدادات الكود الأساسي بنجاح.');
+            resetBookForm();
+            renderPlatform();
+            alert('تمت استعادة البيانات الافتراضية من الكود الأساسي بنجاح.');
         }
 
-        function applySettingsToUI() {
-            document.getElementById('priceBook1').innerText = `السعر: ${settings.price1} جنيه`;
-            document.getElementById('priceBook2').innerText = `السعر: ${settings.price2} جنيه`;
-            document.getElementById('promoText').innerText = settings.promo;
-            document.getElementById('bundleDiscountLabel').innerText = settings.bundleDiscount;
+        function escapeHtml(text) {
+            return String(text || '')
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;');
+        }
 
-            const bundleUnit = Math.max(0, Number(settings.price1) + Number(settings.price2) - Number(settings.bundleDiscount));
+        function renderBooksGrid() {
+            const grid = document.getElementById('booksGrid');
+            if (!platformData.books.length) {
+                grid.innerHTML = '<p style="text-align:center; grid-column:1/-1;">لا توجد كتب معروضة حالياً. يمكنك إضافة كتاب من لوحة الإدارة.</p>';
+                return;
+            }
+
+            grid.innerHTML = platformData.books.map((book) => {
+                const featuresHtml = (book.features || [])
+                    .map((feat) => `<li><i class="fa-solid fa-circle-check"></i> ${escapeHtml(feat)}</li>`)
+                    .join('');
+
+                return `
+                    <div class="book-card">
+                        <div class="book-header">
+                            <span class="book-tag">${escapeHtml(book.tag || 'إصدار تعليمي')}</span>
+                            <div class="book-icon"><i class="fa-solid ${escapeHtml(book.icon || 'fa-book-quran')}"></i></div>
+                            <h2>${escapeHtml(book.title)}</h2>
+                        </div>
+                        <div class="book-body">
+                            <h3>كتاب "${escapeHtml(book.title)}"</h3>
+                            <div class="price-tag">السعر: ${Number(book.price)} جنيه</div>
+                            <p class="book-desc">${escapeHtml(book.description || '')}</p>
+                            <ul class="features-list">${featuresHtml}</ul>
+                            <div class="cta-buttons">
+                                <button type="button" onclick="openOrderModal('${escapeHtml(book.id)}')" class="btn-order-now">
+                                    <i class="fa-solid fa-bag-shopping"></i> إتمام طلب الكتاب
+                                </button>
+                                <button type="button" onclick="openDirectChannel('whatsapp', '${escapeHtml(book.title)}')" class="btn-whatsapp">
+                                    <i class="fa-brands fa-whatsapp"></i> إرسال مباشر عبر واتساب
+                                </button>
+                                <button type="button" onclick="openDirectChannel('messenger', '${escapeHtml(book.title)}')" class="btn-messenger">
+                                    <i class="fa-brands fa-facebook-messenger"></i> إرسال عبر مسنجر
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function renderOrderOptions() {
+            const select = document.getElementById('orderSelection');
+            const currentVal = select.value;
+
+            const optionsHtml = platformData.books.map((book) =>
+                `<option value="${escapeHtml(book.id)}">كتاب ${escapeHtml(book.title)} (${Number(book.price)} جنيه)</option>`
+            );
+
+            if (platformData.books.length > 1) {
+                optionsHtml.push('<option value="bundle">السلسلة كاملة (جميع الإصدارات مع الخصم)</option>');
+            }
+
+            select.innerHTML = optionsHtml.join('');
+
+            if (currentVal && [...select.options].some((o) => o.value === currentVal)) {
+                select.value = currentVal;
+            }
+        }
+
+        function renderAdminBooksList() {
+            const listEl = document.getElementById('managedBooksList');
+            listEl.innerHTML = platformData.books.map((book) => `
+                <div class="managed-book-item">
+                    <div class="managed-book-meta">
+                        <strong>${escapeHtml(book.title)}</strong>
+                        <span>السعر: ${Number(book.price)} جنيه — ${escapeHtml(book.tag || '')}</span>
+                    </div>
+                    <div class="managed-book-actions">
+                        <button type="button" class="btn-edit-sm" onclick="editBookInAdmin('${escapeHtml(book.id)}')">
+                            <i class="fa-solid fa-pen"></i> تعديل
+                        </button>
+                        <button type="button" class="btn-delete-sm" onclick="deleteBookFromAdmin('${escapeHtml(book.id)}')">
+                            <i class="fa-solid fa-trash"></i> حذف
+                        </button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function renderPlatform() {
+            document.getElementById('promoText').innerText = platformData.promo;
+            document.getElementById('bundleDiscountLabel').innerText = platformData.bundleDiscount;
+
+            const sumAll = platformData.books.reduce((acc, b) => acc + (Number(b.price) || 0), 0);
+            const bundleUnit = Math.max(0, sumAll - (Number(platformData.bundleDiscount) || 0));
             document.getElementById('bundlePricePreview').innerText = `الإجمالي: ${bundleUnit} جنيه`;
 
-            document.getElementById('adminPhone').value = settings.phone;
-            document.getElementById('adminFbUrl').value = settings.fbUrl || DEFAULT_FB_URL;
-            document.getElementById('adminPrice1').value = settings.price1;
-            document.getElementById('adminPrice2').value = settings.price2;
-            document.getElementById('adminBundleDiscount').value = settings.bundleDiscount;
-            document.getElementById('adminPromo').value = settings.promo;
+            document.getElementById('bundleBanner').style.display =
+                platformData.books.length > 1 ? 'flex' : 'none';
 
+            document.getElementById('adminPhone').value = platformData.phone;
+            document.getElementById('adminMessengerTarget').value = platformData.messengerTarget || DEFAULT_FB_URL;
+            document.getElementById('adminBundleDiscount').value = platformData.bundleDiscount;
+            document.getElementById('adminPromo').value = platformData.promo;
+
+            renderBooksGrid();
+            renderOrderOptions();
+            renderAdminBooksList();
             updateOrderSummary();
         }
 
-        // Order Modal Logic
+        // Order Modal & Prepared Message Logic
         const orderModal = document.getElementById('orderModal');
 
-        function openOrderModal(selectedItem = 'السلسلة كاملة') {
+        function openOrderModal(selectedId = 'bundle') {
+            manualMessageEdited = false;
             const selectEl = document.getElementById('orderSelection');
-            if ([...selectEl.options].some(opt => opt.value === selectedItem)) {
-                selectEl.value = selectedItem;
+            if ([...selectEl.options].some((opt) => opt.value === selectedId)) {
+                selectEl.value = selectedId;
+            } else if (selectEl.options.length > 0) {
+                selectEl.selectedIndex = 0;
             }
-            updateOrderSummary();
+            updateOrderSummary(true);
             orderModal.classList.add('active');
         }
 
@@ -997,23 +1220,24 @@
             orderModal.classList.remove('active');
         }
 
-        function updateOrderSummary() {
+        function updateOrderSummary(forceMessageRefresh = false) {
             const selection = document.getElementById('orderSelection').value;
             const qty = Math.max(1, parseInt(document.getElementById('orderQty').value, 10) || 1);
             document.getElementById('orderQty').value = qty;
 
-            const p1 = Number(settings.price1) || 0;
-            const p2 = Number(settings.price2) || 0;
-            const discountPerBundle = Number(settings.bundleDiscount) || 0;
-
-            let unitPrice = p1;
+            const discountPerBundle = Number(platformData.bundleDiscount) || 0;
+            let unitPrice = 0;
             let totalDiscount = 0;
+            let selectionLabel = '';
 
-            if (selection === 'بطل التجويد') {
-                unitPrice = p2;
-            } else if (selection === 'السلسلة كاملة') {
-                unitPrice = p1 + p2;
+            if (selection === 'bundle') {
+                unitPrice = platformData.books.reduce((acc, b) => acc + (Number(b.price) || 0), 0);
                 totalDiscount = discountPerBundle * qty;
+                selectionLabel = `السلسلة كاملة (${platformData.books.map((b) => b.title).join(' + ')})`;
+            } else {
+                const found = platformData.books.find((b) => b.id === selection) || platformData.books[0];
+                unitPrice = found ? Number(found.price) || 0 : 0;
+                selectionLabel = found ? `كتاب "${found.title}"` : 'إصدار تعليمي';
             }
 
             const subtotal = unitPrice * qty;
@@ -1023,21 +1247,35 @@
             document.getElementById('discountDisplay').innerText = `${totalDiscount} جنيه`;
             document.getElementById('totalPriceDisplay').innerText = `${finalTotal} جنيه`;
 
-            return { selection, qty, unitPrice, totalDiscount, finalTotal };
+            if (forceMessageRefresh || !manualMessageEdited) {
+                document.getElementById('preparedMessagePreview').value = buildOrderMessage({
+                    selectionLabel,
+                    qty,
+                    totalDiscount,
+                    finalTotal
+                });
+            }
+
+            return { selectionLabel, qty, unitPrice, totalDiscount, finalTotal };
         }
 
-        function buildOrderMessage() {
-            const { selection, qty, totalDiscount, finalTotal } = updateOrderSummary();
+        function syncLiveMessagePreview() {
+            if (!manualMessageEdited) {
+                updateOrderSummary(true);
+            }
+        }
+
+        function buildOrderMessage(summary) {
             const name = document.getElementById('customerName').value.trim();
             const phone = document.getElementById('customerPhone').value.trim();
             const address = document.getElementById('customerAddress').value.trim();
 
             const lines = [
-                'السلام عليكم ورحمة الله، أرغب في طلب:',
-                `• الإصدار: ${selection}`,
-                `• الكمية: ${qty}`,
-                totalDiscount > 0 ? `• الخصم: ${totalDiscount} جنيه` : null,
-                `• الإجمالي: ${finalTotal} جنيه`
+                'السلام عليكم ورحمة الله وبركاته، أرغب في طلب من سلسلة التجويد والعلوم الشرعية:',
+                `• الإصدار: ${summary.selectionLabel}`,
+                `• الكمية: ${summary.qty}`,
+                summary.totalDiscount > 0 ? `• الخصم: ${summary.totalDiscount} جنيه` : null,
+                `• الإجمالي: ${summary.finalTotal} جنيه`
             ].filter(Boolean);
 
             if (name) lines.push(`• الاسم: ${name}`);
@@ -1047,38 +1285,73 @@
             return lines.join('\n');
         }
 
-        function launchMessengerWithMessage(messageText) {
-            const targetUrl = (settings.fbUrl || DEFAULT_FB_URL).trim();
+        function formatEgyptianPhone(rawPhone) {
+            const digits = String(rawPhone || '').replace(/\D+/g, '');
+            if (digits.startsWith('0') && digits.length === 11) {
+                return '2' + digits;
+            }
+            return digits || '201004282724';
+        }
+
+        function resolveMessengerUrl(rawTarget) {
+            const trimmed = String(rawTarget || '').trim();
+            if (!trimmed) return DEFAULT_FB_URL;
+            if (/^https?:\/\//i.test(trimmed)) return trimmed;
+            const cleanUsername = trimmed.replace(/^@+/, '');
+            return `https://m.me/${cleanUsername}`;
+        }
+
+        function sendToWhatsAppWithPreparedText(messageText) {
+            const cleanPhone = formatEgyptianPhone(platformData.phone);
+            const url = `https://wa.me/${cleanPhone}?text=${encodeURIComponent(messageText)}`;
+            window.open(url, '_blank', 'noopener,noreferrer');
+        }
+
+        function sendToMessengerWithPreparedText(messageText) {
+            const targetUrl = resolveMessengerUrl(platformData.messengerTarget);
 
             if (navigator.clipboard && navigator.clipboard.writeText) {
                 navigator.clipboard.writeText(messageText).catch(() => {});
             }
 
-            window.open(targetUrl, '_blank', 'noopener,noreferrer');
+            // إذا كان الرابط بصيغة m.me/username نمرر text كمعامل إضافي حيثما يدعمه مسنجر، مع نسخ النص للحافظة دائماً
+            let finalUrl = targetUrl;
+            if (/m\.me\//i.test(targetUrl)) {
+                const sep = targetUrl.includes('?') ? '&' : '?';
+                finalUrl = `${targetUrl}${sep}text=${encodeURIComponent(messageText)}`;
+            }
+
+            window.open(finalUrl, '_blank', 'noopener,noreferrer');
             alert(
-                'تم نسخ رسالة الطلب تلقائياً وسيتم فتح الصفحة الآن:\n\n' +
+                'تم تجهيز رسالة الطلب ونسخها تلقائياً:\n\n' +
                 messageText +
-                '\n\nاضغط على مراسلة الصفحة ثم الصق الرسالة (Paste) وأرسلها.'
+                '\n\nتم فتح مسنجر/الصفحة — الصق الرسالة (Paste) داخل المحادثة واضغط إرسال.'
             );
         }
 
-        function openMessenger(bookName) {
-            const msg = `السلام عليكم ورحمة الله، أود الاستفسار وطلب: ${bookName}`;
-            launchMessengerWithMessage(msg);
-        }
-
-        function submitOrder(channel) {
-            const msgText = buildOrderMessage();
+        function openDirectChannel(channel, itemTitle) {
+            const preparedText = `السلام عليكم ورحمة الله وبركاته، أود طلب / الاستفسار عن: ${itemTitle} من سلسلة التجويد والعلوم الشرعية.`;
             if (channel === 'whatsapp') {
-                const cleanPhone = formatEgyptianPhone(settings.phone);
-                const url = `https://wa.me/${cleanPhone}?text=${encodeURIComponent(msgText)}`;
-                window.open(url, '_blank', 'noopener,noreferrer');
+                sendToWhatsAppWithPreparedText(preparedText);
             } else {
-                launchMessengerWithMessage(msgText);
+                sendToMessengerWithPreparedText(preparedText);
             }
         }
 
-        // Admin Modal Logic (Long Press 1.5s)
+        function submitOrder(channel) {
+            const msgText = document.getElementById('preparedMessagePreview').value.trim() || buildOrderMessage(updateOrderSummary(false));
+            if (channel === 'whatsapp') {
+                sendToWhatsAppWithPreparedText(msgText);
+            } else {
+                sendToMessengerWithPreparedText(msgText);
+            }
+        }
+
+        function openWhatsApp(topic) {
+            openDirectChannel('whatsapp', topic);
+        }
+
+        // Admin Panel Logic (Long Press 1.5s)
         const teacherBadge = document.getElementById('teacherBadge');
         const adminModal = document.getElementById('adminModal');
         const closeModal = document.getElementById('closeModal');
@@ -1099,7 +1372,7 @@
         teacherBadge.addEventListener('touchend', cancelPress);
 
         function openAdminCheck() {
-            const pwd = prompt('منطقة الإدارة والتحكم:\nيرجى إدخال كلمة المرور للوصول:');
+            const pwd = prompt('منطقة إدارة المنصة:\nيرجى إدخال كلمة المرور للوصول:');
             if (pwd === 'SA01004282724') {
                 adminModal.classList.add('active');
             } else if (pwd !== null) {
@@ -1111,7 +1384,7 @@
             adminModal.classList.remove('active');
         });
 
-        [orderModal, adminModal].forEach(overlay => {
+        [orderModal, adminModal].forEach((overlay) => {
             overlay.addEventListener('click', (e) => {
                 if (e.target === overlay) {
                     overlay.classList.remove('active');
@@ -1119,40 +1392,99 @@
             });
         });
 
-        function saveAdminChanges() {
-            settings.phone = document.getElementById('adminPhone').value.trim() || defaultSettings.phone;
-            settings.fbUrl = document.getElementById('adminFbUrl').value.trim() || DEFAULT_FB_URL;
-            settings.price1 = Math.max(1, Number(document.getElementById('adminPrice1').value) || defaultSettings.price1);
-            settings.price2 = Math.max(1, Number(document.getElementById('adminPrice2').value) || defaultSettings.price2);
-            settings.bundleDiscount = Math.max(0, Number(document.getElementById('adminBundleDiscount').value) || 0);
-            settings.promo = document.getElementById('adminPromo').value.trim() || defaultSettings.promo;
+        function saveGeneralSettings() {
+            platformData.phone = document.getElementById('adminPhone').value.trim() || defaultPlatformData.phone;
+            platformData.messengerTarget = document.getElementById('adminMessengerTarget').value.trim() || DEFAULT_FB_URL;
+            platformData.bundleDiscount = Math.max(0, Number(document.getElementById('adminBundleDiscount').value) || 0);
+            platformData.promo = document.getElementById('adminPromo').value.trim() || defaultPlatformData.promo;
 
-            try {
-                localStorage.setItem(STORAGE_KEY, JSON.stringify(settings));
-            } catch (e) {
-                console.warn('تعذر حفظ الإعدادات:', e);
+            persistPlatformData();
+            renderPlatform();
+            alert('تم حفظ إعدادات التواصل والعروض بنجاح!');
+        }
+
+        function resetBookForm() {
+            document.getElementById('editBookId').value = '';
+            document.getElementById('bookFormTitle').innerText = 'إضافة كتاب جديد إلى السلسلة';
+            document.getElementById('bookTitleInput').value = '';
+            document.getElementById('bookPriceInput').value = '';
+            document.getElementById('bookTagInput').value = '';
+            document.getElementById('bookIconInput').value = 'fa-book-quran';
+            document.getElementById('bookDescInput').value = '';
+            document.getElementById('bookFeaturesInput').value = '';
+        }
+
+        function editBookInAdmin(bookId) {
+            const book = platformData.books.find((b) => b.id === bookId);
+            if (!book) return;
+
+            document.getElementById('editBookId').value = book.id;
+            document.getElementById('bookFormTitle').innerText = `تعديل الكتاب: ${book.title}`;
+            document.getElementById('bookTitleInput').value = book.title;
+            document.getElementById('bookPriceInput').value = book.price;
+            document.getElementById('bookTagInput').value = book.tag || '';
+            document.getElementById('bookIconInput').value = book.icon || 'fa-book-quran';
+            document.getElementById('bookDescInput').value = book.description || '';
+            document.getElementById('bookFeaturesInput').value = (book.features || []).join('\n');
+        }
+
+        function deleteBookFromAdmin(bookId) {
+            if (platformData.books.length <= 1) {
+                alert('يجب الإبقاء على كتاب واحد على الأقل في المنصة.');
+                return;
+            }
+            const book = platformData.books.find((b) => b.id === bookId);
+            if (!book) return;
+            if (!confirm(`هل أنت متأكد من حذف كتاب "${book.title}"؟`)) return;
+
+            platformData.books = platformData.books.filter((b) => b.id !== bookId);
+            persistPlatformData();
+            renderPlatform();
+        }
+
+        function saveBookFromAdmin() {
+            const title = document.getElementById('bookTitleInput').value.trim();
+            const price = Math.max(1, Number(document.getElementById('bookPriceInput').value) || 0);
+            const tag = document.getElementById('bookTagInput').value.trim() || 'إصدار تعليمي';
+            const icon = document.getElementById('bookIconInput').value || 'fa-book-quran';
+            const description = document.getElementById('bookDescInput').value.trim();
+            const features = document.getElementById('bookFeaturesInput').value
+                .split('\n')
+                .map((line) => line.trim())
+                .filter(Boolean);
+
+            if (!title || !price) {
+                alert('يرجى إدخال اسم الكتاب وسعر صحيح.');
+                return;
             }
 
-            applySettingsToUI();
-            alert('تم حفظ البيانات وتحديث الصفحة بنجاح!');
-            adminModal.classList.remove('active');
-        }
-
-        function formatEgyptianPhone(rawPhone) {
-            const digits = String(rawPhone || '').replace(/\D+/g, '');
-            if (digits.startsWith('0') && digits.length === 11) {
-                return '2' + digits;
+            const existingId = document.getElementById('editBookId').value;
+            if (existingId) {
+                platformData.books = platformData.books.map((b) =>
+                    b.id === existingId
+                        ? { ...b, title, price, tag, icon, description, features: features.length ? features : b.features }
+                        : b
+                );
+            } else {
+                const newId = `book-${Date.now()}`;
+                platformData.books.push({
+                    id: newId,
+                    title,
+                    price,
+                    tag,
+                    icon,
+                    description: description || `إصدار تعليمي ضمن سلسلة التجويد والعلوم الشرعية بعنوان "${title}".`,
+                    features: features.length ? features : ['شرح ميسر وواضح.', 'مناسب للدراسة والمراجعة.']
+                });
             }
-            return digits || '201004282724';
+
+            persistPlatformData();
+            resetBookForm();
+            renderPlatform();
+            alert('تم تحديث قائمة الكتب بنجاح!');
         }
 
-        function openWhatsApp(bookName) {
-            const cleanPhone = formatEgyptianPhone(settings.phone);
-            const msg = encodeURIComponent(`السلام عليكم ورحمة الله، أود التواصل بشأن: ${bookName}`);
-            window.open(`https://wa.me/${cleanPhone}?text=${msg}`, '_blank', 'noopener,noreferrer');
-        }
-
-        loadSettings();
+        loadPlatformData();
     </script>
 </body>
 </html>
